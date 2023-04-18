@@ -28,7 +28,8 @@
     "test:coverage": "jest --coverage --colors --maxWorkers=2",
     "hygen": "hygen",
     "component:new": "hygen component with-prompt",
-    "publish": "npx semantic-release --no-ci"
+    "publish": "npx semantic-release --no-ci",
+    "typegen:scss": "typed-scss-modules src"
   },
   "main": "index.js",
   "module": "index.esm.js",
@@ -92,6 +93,7 @@
     "stylelint-scss": "^3.18.0",
     "ts-jest": "^26.4.4",
     "ts-loader": "^8.0.11",
+    "typed-scss-modules": "^7.1.0",
     "typescript": "^3.8.3",
     "webpack": "^4.42.1"
   },
