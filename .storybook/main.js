@@ -2,8 +2,9 @@ const path = require('path');
 
 module.exports = {
   stories: ['../src/**/*.stories.tsx'],
+  addons: ['@storybook/addon-knobs'],
   webpackFinal: async (config, { configType }) => {
-   // add scss support
+    // add scss support
     config.module.rules.push({
       test: /\.scss$/,
       use: ['style-loader', 'css-loader', 'sass-loader'],

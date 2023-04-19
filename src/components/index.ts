@@ -3,3 +3,5 @@
 export * from './Example';
 export * from './Container'
 
+export * from './Button'
+

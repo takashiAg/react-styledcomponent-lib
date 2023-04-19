@@ -16,7 +16,7 @@ export interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
   width?: number;
 }
 
-const Container2 = styled.div.attrs<ContainerProps>((p) => ({
+const StyledContainer = styled.div.attrs<ContainerProps>((p) => ({
   className: classnames(
     classes.root,
     p.row && classes.row,
@@ -38,5 +38,5 @@ const Container2 = styled.div.attrs<ContainerProps>((p) => ({
   width: ${(p) => (p.width ? `${p.width}px` : 'auto')};
 `;
 export const Container: React.FC<ContainerProps> = (p) => {
-  return <Container2 {...p} />;
+  return <StyledContainer {...p} />;
 };
