@@ -11,11 +11,7 @@ export interface LabelProps extends React.HTMLAttributes<HTMLLabelElement> {
 }
 
 const StyledLabel = styled.label.attrs<LabelProps>((p) => ({
-  className: classnames(
-    classes.label,
-    p?.fullWidth && classes.fullWidth,
-    p?.disabled && classes.disabled
-  ),
+  className: classnames(classes.label, p?.fullWidth && classes.fullWidth),
 }))<LabelProps>`
   &::before {
     content: '${(p) => p.label}';

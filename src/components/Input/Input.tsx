@@ -15,8 +15,7 @@ const StyledInput = styled.input.attrs<InputProps>((p) => ({
   className: classnames(
     classes.input,
     p?.fullWidth && classes.fullWidth,
-    p?.disabled && classes.disabled,
-    p?.loading && classes.loading
+    p?.disabled && classes.disabled
   ),
 }))<InputProps>``;
 
