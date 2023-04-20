@@ -1,12 +1,4 @@
 .button {
-  --primary-bg-color: #a6d0dd;
-  --primary-text-color: black;
-  --secondary-bg-color: #ff6969;
-  --secondary-text-color: white;
-  --info-bg-color: #ffd3b0;
-  --info-text-color: black;
-  --default-bg-color: #fff9de;
-  --default-text-color: black;
   background-color: var(--default-bg-color);
   color: var(--default-text-color);
   display: flex;

@@ -1,0 +1,23 @@
+:root {
+  --default-primary-bg-color: #a6d0dd;
+  --default-primary-text-color: black;
+  --default-secondary-bg-color: #ff6969;
+  --default-secondary-text-color: white;
+  --default-info-bg-color: #ffd3b0;
+  --default-info-text-color: black;
+  --default-default-bg-color: #fff9de;
+  --default-default-text-color: black;
+
+  --primary-bg-color: var(--override-primary-bg-color, var(--default-primary-bg-color));
+  --primary-text-color: var(--override-primary-text-color, var(--default-primary-text-color));
+  --secondary-bg-color: var(--override-secondary-bg-color, var(--default-secondary-bg-color));
+  --secondary-text-color: var(--override-secondary-text-color, var(--default-secondary-text-color));
+  --info-bg-color: var(--override-info-bg-color, var(--default-info-bg-color));
+  --info-text-color: var(--override-info-text-color, var(--default-info-text-color));
+  --default-bg-color: var(--override-default-bg-color, var(--default-default-bg-color));
+  --default-text-color: var(--override-default-text-color, var(--default-default-text-color));
+}
+
+* {
+  box-sizing: border-box;
+}
