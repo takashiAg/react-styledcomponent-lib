@@ -43,9 +43,9 @@ storiesOf('Button', module)
   ))
   .add('size', () => (
     <Container fullWidth>
-      <Button size='small'>size='small'</Button>
-      <Button size='medium'>size='midium'</Button>
-      <Button size='large'>size='large'</Button>
+      <Button size='small'>size=&apos;small&apos;</Button>
+      <Button size='medium'>size=&apos;midium&apos;</Button>
+      <Button size='large'>size=&apos;large&apos;</Button>
     </Container>
   ))
   .add('other', () => (

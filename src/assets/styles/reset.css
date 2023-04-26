@@ -7,7 +7,6 @@
   --default-info-text-color: black;
   --default-default-bg-color: #fff9de;
   --default-default-text-color: black;
-
   --primary-bg-color: var(--override-primary-bg-color, var(--default-primary-bg-color));
   --primary-text-color: var(--override-primary-text-color, var(--default-primary-text-color));
   --secondary-bg-color: var(--override-secondary-bg-color, var(--default-secondary-bg-color));

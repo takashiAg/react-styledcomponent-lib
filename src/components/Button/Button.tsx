@@ -24,7 +24,9 @@ const StyledButton = styled.button.attrs<ButtonProps>((p) => ({
     p?.disabled && classes.disabled,
     p?.loading && classes.loading
   ),
-}))<ButtonProps>``;
+}))<ButtonProps>`
+  box-sizing: border-box;
+`;
 
 export const Button: React.FC<ButtonProps> = (p) => {
   return <StyledButton {...p} />;

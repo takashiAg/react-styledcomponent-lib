@@ -17,7 +17,9 @@ const StyledInput = styled.input.attrs<InputProps>((p) => ({
     p?.fullWidth && classes.fullWidth,
     p?.disabled && classes.disabled
   ),
-}))<InputProps>``;
+}))<InputProps>`
+  box-sizing: border-box;
+`;
 
 export const Input: React.FC<InputProps> = (p) => {
   return <StyledInput {...p} />;
