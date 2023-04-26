@@ -13,17 +13,16 @@ export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
 }
 
 const StyledButton = styled.button.attrs<ButtonProps>((p) => ({
-  className: classnames(
-    classes.button,
-    p?.color === 'primary' && classes.primary,
-    p?.color === 'secondary' && classes.secondary,
-    p?.color === 'info' && classes.info,
-    p?.size === 'small' && classes.small,
-    p?.size === 'large' && classes.large,
-    p?.fullWidth && classes.fullWidth,
-    p?.disabled && classes.disabled,
-    p?.loading && classes.loading
-  ),
+  className: classnames(classes.button, {
+    [classes.primary]: p?.color === 'primary',
+    [classes.secondary]: p?.color === 'secondary',
+    [classes.info]: p?.color === 'info',
+    [classes.small]: p?.size === 'small',
+    [classes.large]: p?.size === 'large',
+    [classes.fullWidth]: !!p?.fullWidth,
+    [classes.disabled]: !!p?.disabled,
+    [classes.loading]: !!p?.loading,
+  }),
 }))<ButtonProps>`
   box-sizing: border-box;
 `;

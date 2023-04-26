@@ -1,8 +1,26 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Container } from './Container';
+import { withKnobs, boolean, number, select } from '@storybook/addon-knobs';
 
 storiesOf('container', module)
+  .addDecorator(withKnobs)
+  .add('all', () => (
+    <Container
+      row={boolean('direction-row', false)}
+      fullWidth={boolean('fullWidth', false)}
+      height={number('height', 300)}
+      width={number('width', 300)}
+      align={select('align', ['left', 'center', 'right'], 'center')}
+      justify={select('justify', ['start', 'center', 'end', 'between', 'around'], 'center')}
+      bordered={boolean('bordered', true)}
+      rounded={boolean('rounded', true)}
+    >
+      <Container bordered rounded />
+      <Container bordered rounded />
+      <Container bordered rounded />
+    </Container>
+  ))
   .add('flex-direction', () => (
     <Container fullWidth>
       <Container bordered rounded fullWidth>

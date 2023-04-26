@@ -16,26 +16,25 @@ export interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
   width?: number;
 }
 
-const StyledContainer = styled.div.attrs<ContainerProps>((p) => ({
-  className: classnames(
-    classes.root,
-    p.row && classes.row,
-    p?.align === 'left' && classes.alignStart,
-    p?.align === 'center' && classes.alignCenter,
-    p?.align === 'right' && classes.alignEnd,
-    p?.justify === 'start' && classes.justifyStart,
-    p?.justify === 'center' && classes.justifyCenter,
-    p?.justify === 'end' && classes.justifyEnd,
-    p?.justify === 'between' && classes.justifyBetween,
-    p?.justify === 'around' && classes.justifyAround,
-    p?.fullWidth && classes.fullWidth,
-    p?.fullHeight && classes.fullHeight,
-    p?.bordered && classes.bordered,
-    p?.rounded && classes.rounded
-  ),
+const StyledContainer = styled.div.attrs<ContainerProps>((p: ContainerProps) => ({
+  className: classnames(classes.root, {
+    [classes.row]: !!p?.row,
+    [classes.alignStart]: p?.align === 'left',
+    [classes.alignCenter]: p?.align === 'center',
+    [classes.alignEnd]: p?.align === 'right',
+    [classes.justifyStart]: p?.justify === 'start',
+    [classes.justifyCenter]: p?.justify === 'center',
+    [classes.justifyEnd]: p?.justify === 'end',
+    [classes.justifyBetween]: p?.justify === 'between',
+    [classes.justifyAround]: p?.justify === 'around',
+    [classes.fullWidth]: !!p?.fullWidth,
+    [classes.fullHeight]: !!p?.fullHeight,
+    [classes.bordered]: !!p?.bordered,
+    [classes.rounded]: !!p?.rounded,
+  }),
 }))<ContainerProps>`
-  height: ${(p) => (p.height ? `${p.height}px` : 'auto')};
-  width: ${(p) => (p.width ? `${p.width}px` : 'auto')};
+  height: ${(p) => p.height}px;
+  width: ${(p) => p.width}px;
 `;
 export const Container: React.FC<ContainerProps> = (p) => {
   return <StyledContainer {...p} />;

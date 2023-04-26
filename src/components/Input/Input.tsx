@@ -11,12 +11,11 @@ export interface InputProps extends React.HTMLAttributes<HTMLInputElement> {
   loading?: boolean;
 }
 
-const StyledInput = styled.input.attrs<InputProps>((p) => ({
-  className: classnames(
-    classes.input,
-    p?.fullWidth && classes.fullWidth,
-    p?.disabled && classes.disabled
-  ),
+const StyledInput = styled.input.attrs<InputProps>((p: InputProps) => ({
+  className: classnames(classes.input, {
+    [classes.fullWidth]: !!p?.fullWidth,
+    [classes.disabled]: !!p?.disabled,
+  }),
 }))<InputProps>`
   box-sizing: border-box;
 `;
