@@ -7,7 +7,7 @@ storiesOf('container', module)
   .addDecorator(withKnobs)
   .add('all', () => (
     <Container
-      row={boolean('direction-row', false)}
+      row={boolean('row', false)}
       fullWidth={boolean('fullWidth', false)}
       height={number('height', 300)}
       width={number('width', 300)}
