@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/takashiAg/react-styledcomponent-lib/compare/v1.0.0...v1.1.0) (2023-05-14)
+
+
+### Features
+
+* fix scss ([a849cc7](https://github.com/takashiAg/react-styledcomponent-lib/commit/a849cc7622b369d11049b361a9d5cc04f14672e5))
+
 ## 1.0.0 (2023-04-26)
 
 
