@@ -25,7 +25,12 @@ export default {
   plugins: [
     resolve(),
     commonjs(),
-    postcss(),
+    postcss({
+      extract: true,
+      minimize: true,
+      modules: true,
+      use: ['sass'],
+    }),
     typescript({
       typescript: ts,
       tsconfig: 'tsconfig.json',
