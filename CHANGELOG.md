@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.6.0](https://github.com/takashiAg/react-styledcomponent-lib/compare/v1.5.0...v1.6.0) (2023-05-15)
+
+
+### Features
+
+* props update ([8092ed3](https://github.com/takashiAg/react-styledcomponent-lib/commit/8092ed32b65fb6e005726961f01b12e67149ce25))
+* test ([d830586](https://github.com/takashiAg/react-styledcomponent-lib/commit/d830586598a583aa6957e9961bbaee9c434ac101))
+* update semantic-release version ([731dbc0](https://github.com/takashiAg/react-styledcomponent-lib/commit/731dbc03c70ccfc07bdd9cd1ade06fe0444a46be))
+* update semantic-release version ([597d63f](https://github.com/takashiAg/react-styledcomponent-lib/commit/597d63fbbc0467fca05443a2247840a73d828942))
+
 ## [1.5.0](https://github.com/takashiAg/react-styledcomponent-lib/compare/v1.4.0...v1.5.0) (2023-05-15)
 
 
