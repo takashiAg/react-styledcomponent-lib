@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/takashiAg/react-styledcomponent-lib/compare/v1.2.0...v1.3.0) (2023-05-15)
+
+
+### Features
+
+* add reset.css ([d1ca1ce](https://github.com/takashiAg/react-styledcomponent-lib/commit/d1ca1ce70bafc0311cf54bcbb5c70373e61ff83f))
+
 ## [1.2.0](https://github.com/takashiAg/react-styledcomponent-lib/compare/v1.1.0...v1.2.0) (2023-05-14)
 
 
