@@ -5,11 +5,7 @@ export * from './Container';
 export * from './Button';
 export * from './Input';
 export * from './Label';
-export * from './Spacer'
-
-export * from './Text'
-
-export * from './Head'
-
-export * from './Dialog'
-
+export * from './Spacer';
+export * from './Text';
+export * from './Head';
+export * from './Dialog';
