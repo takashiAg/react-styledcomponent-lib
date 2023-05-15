@@ -1,3 +1,11 @@
-export const disabled: string;
-export const fullWidth: string;
-export const input: string;
+export type Styles = {
+  disabled: string;
+  fullWidth: string;
+  input: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

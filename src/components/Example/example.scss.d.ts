@@ -1,3 +1,11 @@
-export const example: string;
-export const exampleActive: string;
-export const exampleDisabled: string;
+export type Styles = {
+  Example: string;
+  'Example--active': string;
+  'Example--disabled': string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

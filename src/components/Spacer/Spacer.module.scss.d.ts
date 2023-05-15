@@ -1,6 +1,5 @@
 export type Styles = {
-  fullWidth: string;
-  label: string;
+  spacer: string;
 };
 
 export type ClassNames = keyof Styles;

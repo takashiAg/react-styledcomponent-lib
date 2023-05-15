@@ -1,13 +1,21 @@
-export const bordered: string;
-export const button: string;
-export const disabled: string;
-export const fullHeight: string;
-export const fullWidth: string;
-export const info: string;
-export const large: string;
-export const loading: string;
-export const primary: string;
-export const rounded: string;
-export const secondary: string;
-export const small: string;
-export const spin: string;
+export type Styles = {
+  bordered: string;
+  button: string;
+  disabled: string;
+  fullHeight: string;
+  fullWidth: string;
+  info: string;
+  large: string;
+  loading: string;
+  primary: string;
+  rounded: string;
+  secondary: string;
+  small: string;
+  spin: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;
