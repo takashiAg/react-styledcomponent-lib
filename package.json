@@ -1,7 +1,7 @@
 {
   "name": "react-styledcomponent-template",
   "license": "MIT",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "private": false,
   "description": "React Typescript Library Boilerplate",
   "author": "ryosuke ando<ryo@ando.link>",
