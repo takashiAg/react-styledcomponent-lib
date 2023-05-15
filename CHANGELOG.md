@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/takashiAg/react-styledcomponent-lib/compare/v1.3.0...v1.4.0) (2023-05-15)
+
+
+### Features
+
+* add spacer ([40dd475](https://github.com/takashiAg/react-styledcomponent-lib/commit/40dd4750fd61d98665627fcdac5b1de945214b58))
+
 ## [1.3.0](https://github.com/takashiAg/react-styledcomponent-lib/compare/v1.2.0...v1.3.0) (2023-05-15)
 
 
