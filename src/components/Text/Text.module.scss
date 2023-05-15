@@ -1,0 +1,23 @@
+.root {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  &.left {
+    text-align: left;
+    justify-content: start;
+  }
+  &.center {
+    text-align: center;
+    justify-content: center;
+  }
+  &.right {
+    text-align: right;
+    justify-content: end;
+  }
+}
