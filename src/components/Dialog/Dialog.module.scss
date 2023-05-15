@@ -23,6 +23,8 @@
     position: relative;
     overflow-y: scroll;
     gap: 20px;
+    display: flex;
+    flex-direction: column;
     .close {
       position: absolute;
       right: 10px;
