@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import classes from './Input.module.scss';
 import classnames from 'classnames';
 
-export interface InputProps extends React.HTMLAttributes<HTMLInputElement> {
+export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   color?: 'primary' | 'secondary' | 'info' | 'default';
   fullWidth?: boolean;
   disabled?: boolean;
