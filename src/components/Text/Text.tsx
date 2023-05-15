@@ -13,7 +13,9 @@ const StyledText = styled.pre.attrs<TextProps>((p: TextProps) => ({
     [classes.center]: p.align === 'center',
     [classes.right]: p.align === 'right',
   }),
-}))<TextProps>``;
+}))<TextProps>`
+  box-sizing: border-box;
+`;
 
 export const Text: React.FC<TextProps> = (p) => {
   return <StyledText {...p} />;

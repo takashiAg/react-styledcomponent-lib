@@ -8,14 +8,17 @@
   justify-content: start;
   white-space: pre-wrap;
   word-wrap: break-word;
+
   &.left {
     text-align: left;
     justify-content: start;
   }
+
   &.center {
     text-align: center;
     justify-content: center;
   }
+
   &.right {
     text-align: right;
     justify-content: end;
