@@ -11,3 +11,5 @@ export * from './Text'
 
 export * from './Head'
 
+export * from './Dialog'
+
