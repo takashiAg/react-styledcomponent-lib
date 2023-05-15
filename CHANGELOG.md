@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.0](https://github.com/takashiAg/react-styledcomponent-lib/compare/v1.4.0...v1.5.0) (2023-05-15)
+
+
+### Features
+
+* add head ([70b0717](https://github.com/takashiAg/react-styledcomponent-lib/commit/70b0717802f57996e2dacffe56ea1c0b5323ec50))
+* add text ([b2bc654](https://github.com/takashiAg/react-styledcomponent-lib/commit/b2bc654bccff57f7c6a68f4dde891cc6b3c7955c))
+
 ## [1.4.0](https://github.com/takashiAg/react-styledcomponent-lib/compare/v1.3.0...v1.4.0) (2023-05-15)
 
 
