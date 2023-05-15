@@ -9,3 +9,5 @@ export * from './Spacer';
 export * from './Text';
 export * from './Head';
 export * from './Dialog';
+export * from './Image'
+

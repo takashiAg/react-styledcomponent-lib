@@ -1,0 +1,8 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  &.fullWidth {
+    width: 100%;
+  }
+}
