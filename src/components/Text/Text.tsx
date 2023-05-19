@@ -5,6 +5,8 @@ import styled from 'styled-components';
 
 export interface TextProps extends React.HTMLAttributes<HTMLPreElement> {
   align?: 'left' | 'center' | 'right';
+  error?: boolean;
+  warning?: boolean;
 }
 
 const StyledText = styled.pre.attrs<TextProps>((p: TextProps) => ({
@@ -12,6 +14,8 @@ const StyledText = styled.pre.attrs<TextProps>((p: TextProps) => ({
     [classes.left]: p.align === 'left',
     [classes.center]: p.align === 'center',
     [classes.right]: p.align === 'right',
+    [classes.error]: p.error,
+    [classes.warning]: p.warning,
   }),
 }))<TextProps>`
   box-sizing: border-box;

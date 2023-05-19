@@ -23,4 +23,11 @@
     text-align: right;
     justify-content: end;
   }
+
+  &.error {
+    color: var(--secondary-bg-color);
+  }
+  &.warning {
+    color: var(--info-bg-color);
+  }
 }
